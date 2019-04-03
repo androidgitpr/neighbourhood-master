@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+        <!--  This is the main content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/frame"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject : "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:inputType="textMultiLine"
+                android:textStyle="normal"
+                android:layout_margin="5dp"/>
+            <EditText
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:hint="Subject "
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:background="@drawable/textinputborder"
+                android:padding="10dp"
+                android:layout_margin="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail : "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:layout_margin="5dp"/>
+            <EditText
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:hint="Details max 500 character"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:background="@drawable/textinputborder"
+                android:padding="10dp"
+                android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+
+        <!--  This is the title label -->
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorValimah"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:minWidth="100px"
+            android:layout_margin="30dp"
+            android:textColor="#fff" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+        <!--  This is the main content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/frame"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category : *"
+                android:textColor="#000"
+                android:padding="5dp"
+                android:textSize="16sp"
+                />
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/ed2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:layout_margin="5dp"
+                android:background="#eee">
+
+                <Spinner
+                    android:id="@+id/categorySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    />
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Category : *"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:textSize="16sp"
+                />
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/ed1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:layout_margin="5dp"
+                android:background="#eee">
+
+                <Spinner
+                    android:id="@+id/subCatSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    />
+            </RelativeLayout>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date : *"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:inputType="number"
+                android:textStyle="normal"
+                android:layout_margin="5dp"/>
+            <EditText
+                android:id="@+id/service_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:hint="Select Date "
+                android:editable="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:background="@drawable/textinputborder"
+                android:padding="10dp"
+                android:layout_margin="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time : *"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:layout_margin="5dp"/>
+            <EditText
+                android:id="@+id/service_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:hint="Select Time"
+                android:editable="false"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:background="@drawable/textinputborder"
+                android:padding="10dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description : "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:layout_margin="5dp"/>
+            <EditText
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:hint="Problem Statement "
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:background="@drawable/textinputborder"
+                android:padding="10dp"
+                android:layout_margin="5dp"/>
+            </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/processBar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--  This is the title label -->
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorValimah"
+            android:padding="2dp"
+            android:textSize="20sp"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:minWidth="100px"
+            android:layout_margin="30dp"
+            android:textColor="#fff" />
+    </LinearLayout>
+</ScrollView>

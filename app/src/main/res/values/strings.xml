@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NeighbourHood</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="material_icon_account">&#xf2f5;</string>
+    <string name="material_icon_home">&#xf015;</string>
+    <string name="material_call">&#xf095;</string>
+    <string name="material_email">&#xf0e0;</string>
+    <string name="material_share">&#xf1e0;</string>
+    <string name="cd_main_image">main image</string>
+    <string name="number_of_images">%d image(s)</string>
+</resources>
