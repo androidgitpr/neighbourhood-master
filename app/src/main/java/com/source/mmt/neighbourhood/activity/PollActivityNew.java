@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
-
 import com.source.mmt.neighbourhood.R;
 
 public class PollActivityNew extends SlidingMenuActivity {
@@ -79,7 +78,6 @@ public class PollActivityNew extends SlidingMenuActivity {
         textView3=contentView.findViewById(R.id.textView2);
         seekBar3.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener()
         {
-
             public void onStopTrackingTouch(SeekBar bar)
             {
                 int value = bar.getProgress(); // the value of the seekBar progress
@@ -90,8 +88,7 @@ public class PollActivityNew extends SlidingMenuActivity {
 
             }
 
-            public void onProgressChanged(SeekBar bar,
-                                          int paramInt, boolean paramBoolean)
+            public void onProgressChanged(SeekBar bar,int paramInt, boolean paramBoolean)
             {
                 textView3.setText("" + paramInt + "%"); // here in textView the percent will be shown
             }
